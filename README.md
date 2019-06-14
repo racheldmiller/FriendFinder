@@ -14,4 +14,4 @@ Express | Path
 
 <h3>Learn More About Me!</h3>
 <ul><li><a href="https://www.github.com/racheldmiller">Github</a></li>
-<li><a href="https://wwww.linkedin.com/in/rachel-d-miller">LinkedIn</a></li></ul>
+<li><a href="https://www.linkedin.com/in/rachel-d-miller/">LinkedIn</a></li></ul>
