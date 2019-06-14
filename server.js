@@ -2,7 +2,7 @@
 
 // DEPENDENCIES: The npm packages needed to allow our server to function properly
 var express = require("express");
-
+// var path = require("path");
 // ----------------------------------------------------------------
 
 // EXPRESS CONFIGURATION: basic properties for our express server
@@ -20,8 +20,8 @@ app.use(express.json());
 
 // ROUTER
 // point our server to a series of "route" files; gives our server a map of how to respond when users visit or request data from various URLs.
-// require("./app/routing/apiRoutes")(app);
-// require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // ----------------------------------------------------------------
 
