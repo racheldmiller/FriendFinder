@@ -2,7 +2,6 @@
 
 // DEPENDENCIES: The npm packages needed to allow our server to function properly
 var express = require("express");
-var path = require("path");
 
 // ----------------------------------------------------------------
 
