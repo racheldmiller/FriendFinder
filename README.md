@@ -12,8 +12,8 @@ HTML | JavaScript | Node.js
 <h3>Packages Needed</h3>
 Express | Path
 
-<h3>Commentary</h3>
-I initally struggled with getting the localhost to connect properly. Now I have to figure out how to write the math portion.
+<h3>TO-DO LIST</h3>
+Write the math portion, create the modals, put in some dummy data, and make sure people are able to leave their information.
 
 <h3>Learn More About Me!</h3>
 <ul><li><a href="https://www.github.com/racheldmiller">Github</a></li>
