@@ -164,6 +164,7 @@
           <option>5 (Strongly Agree)</option>
         </select>
       </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
 
       <footer class="footer">
           <div class="container">
@@ -186,5 +187,48 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+     $("#submit").on("click", function(event) {
+        event.preventDefault();
+        console.log("clicked!");
+        
+        function validate() {
+         var isValid = true; 
+         $(".form-control").each(function() {
+          console.log("the form" + this)
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+         });  
+         return isValid;
+        };
+
+         if (validate()) {
+           console.log("works!")
+         }
+         else {
+           console.log("doesn't work!")
+         }
+     });
+    </script>
   </body>
 </html>
+
+
+<!-- on click function, event.prevent default -->
+<!-- .val for the select -->
+<!-- validate form function (which I can do inside the on click event) -->
+<!-- conditional statement: if validate form, .val for user input -->
+<!-- create object for user data -->
+
+
+
+<!-- var userData = {
+  name: $(id of name field).val(),
+  photo: $(id of photo field).val(),
+  scores: [$(id of Q1).val, $(id of Q2).val, etc.]
+} -->
+<!-- console.log(userData) -->
+
+<!-- API post to friends.js page -->
